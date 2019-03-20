@@ -1,0 +1,242 @@
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;}
+ul,ol{list-style: none;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+.resume-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    max-width: 1102px;
+    background: rgb(236,236,236);
+    padding: 40px 0;
+    display: flex;
+}
+.left{
+    width: 280px;
+}
+.user{
+    margin: 0 28px 40px;
+    text-align: center;
+}
+.user h1{     
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    position: relative;
+}
+.user h1::after{     
+    content: '';
+    border-bottom: 2px solid rgb(214,214,214);
+    width: 90px;
+    position: absolute;
+    bottom: 0px;
+    left: 65px;
+}
+.user p{
+    padding: 20px 0 25px;
+    position: relative;
+}
+.user p::after{
+    content: '';
+    position: absolute;
+    left: -28px;
+    bottom: -38px;
+    border-top: 20px solid rgb(214,214,214);
+    border-right: 140px solid rgb(214,214,214);
+    border-bottom: 20px solid transparent;
+    border-left: 140px solid transparent;
+}
+.contact{
+    padding: 40px 20px 20px;
+}
+.contact li{
+    padding: 10px;
+    border-bottom: 1px solid rgb(214,214,214);
+}
+.contact span{
+    padding-right: 12px;
+    border-right: 1px solid rgb(214,214,214);
+    margin-right: 12px; 
+}
+.contact .iconfont{
+    font-size: 20px;
+    color: rgb(123, 186, 170)
+}
+.mySkills,.others{
+    background: rgb(123, 186, 170);
+    padding: 20px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+}
+.mySkills h1,.honor h1,.others h1{
+    font-size: 24px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.mySkills li{
+    padding: 15px 0 20px;
+    position: relative;
+}
+.mySkills li:nth-child(1){
+    padding-top: 0;
+}
+.mySkills li>span{
+    border-bottom: 4px solid rgb(116, 197, 181);
+    border-radius: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+}
+.mySkills li>span::after{
+    content: '';
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 7%;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+}
+.mySkills li:nth-child(1) span::after{
+    width: 80%;
+}
+.mySkills li:nth-child(2) span::after{
+    width: 50%;
+}
+.mySkills li:nth-child(3) span::after{
+    width: 40%;
+}
+.mySkills li:nth-child(4) span::after{
+    width: 7%;
+}
+.honor,.others{
+    padding: 20px;
+}
+.honor li{
+    border-bottom: 1px solid rgb(214,214,214);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.honor li:nth-child(3){
+    padding-left: 46px;
+}
+.honor li:last-child{
+    padding-left: 46px;
+    margin-bottom: 0px;
+}
+.others li{
+    border-bottom: 1px solid rgb(214,214,214);
+    padding: 10px 0;
+}
+.others li:nth-child(1){
+    padding-top: 0;
+}
+.others li>span{
+    padding:0 12px;
+    border-right: 1px solid rgb(214,214,214);
+    margin-right: 12px;
+}
+.others li>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.others li>a:hover{
+    text-decoration: underline;
+}
+.right.wrapper{
+    width: 800px;
+    background: rgb(255, 255, 255);
+    margin-right: 20px;
+    padding: 40px;
+}
+.summary{
+    display: flex;
+    position: relative;
+   
+}
+.summary .wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.summary .wrapper a{
+    text-decoration: none;
+    /* color: black; */
+}
+.summary img{
+    display: block;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.summary p{
+    padding: 5px 0 5px 70px;
+    position:absolute;
+    right: 0px;
+    top: 0px;
+    width: 640px;
+    line-height: 24px;
+}
+
+.education>h1,.school>h1,.frontendPrj>h1,.evaluateSelf>h1{
+    color: rgb(217,217, 217);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    
+}
+.education .item-wrapper{
+    display: flex;
+}
+.education .time{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 3px;
+    font-size: 14px;
+    margin: 10px 15px 0 0;
+    height: 100%;
+}
+.education .item , .school .item > div , .frontendPrj .item > div{
+    border-left: 1px solid rgb(214,214,214);
+    padding: 10px 0px 10px 34px;
+    position: relative;
+}
+.education .item::before , .school .item > div::before , .frontendPrj .item > div::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: rgb(255,255,255);
+    border: 2px solid rgb(116, 197, 181);
+    position: absolute;
+    left: -5px;
+    top: 16px;
+    border-radius: 100%;
+}
+.education .item>p , .school .item p , .frontendPrj .item p{
+    font-size: 20px;
+}
+.education .item>li,.education .item>ul , .school .item>div>ul,.school .item>div>ul>li , .frontendPrj .item>div>ul,.frontendPrj .item>div>ul>li{list-style-type: disc;padding-top: 10px;line-height: 24px;}
+.school li.item , .frontendPrj li.item{
+    display: flex;
+    margin-bottom: 20px;
+}
+.school .item > .time , .frontendPrj .item > .time{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 3px;
+    font-size: 14px;
+    margin: 10px 15px 0 0;
+    height: 100%;
+    white-space: nowrap;
+}
+.evaluateSelf p{
+    text-align: center;
+}
+@media print {
+    .frontendPrj ul{
+        margin-bottom: 10px;
+    }
+}
